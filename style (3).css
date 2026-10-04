@@ -1,0 +1,58 @@
+/* Отступы (margin/padding) заданы утилитами Bootstrap в разметке,
+   здесь только оформление: цвета, шрифт, размеры. */
+
+:root {
+  --site-bg: #f4f6f8;
+  --site-dark: #1f3a5f;
+  --site-accent: #2f6fb3;
+  --site-text: #1e2630;
+}
+
+body {
+  background-color: var(--site-bg);
+  color: var(--site-text);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#site-header {
+  background-color: var(--site-dark);
+  color: #fff;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+#main-nav {
+  background-color: var(--site-accent);
+}
+
+#main-nav .nav-link {
+  color: #fff;
+}
+
+#main-nav .nav-link:hover,
+#main-nav .nav-link:focus {
+  color: #dbe9f8;
+}
+
+#main-nav .navbar-toggler {
+  background-color: #fff;
+}
+
+#site-footer {
+  background-color: var(--site-dark);
+  color: #fff;
+}
+
+/* Планшеты и выше */
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 2.25rem;
+  }
+}
